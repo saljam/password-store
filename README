@@ -1,22 +1,15 @@
-======================
-Simple Password Store
-by Jason Donenfeld
-   Jason@zx2c4.com
-======================
+A version of pass (https://www.passwordstore.org) that uses a pivy-tool
+instead of gpg.
 
-This is a very simple password store that encrypts passwords using gpg and
-places the encrypted password in a directory. It can generate new passwords
-and keep track of old ones.
-
-Visit the project page for more information: http://www.passwordstore.org/
-
-Please see the man page for documentation and examples.
+Missing functionality:
+- Reencrypting passwords with a different key
+- Probably breaks most extentions
 
 Depends on:
 - bash
   http://www.gnu.org/software/bash/
-- GnuPG2
-  http://www.gnupg.org/
+- pivy
+  https://github.com/joyent/pivy
 - git
   http://www.git-scm.com/
 - xclip (for X11 environments)
